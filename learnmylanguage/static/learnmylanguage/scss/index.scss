@@ -7,6 +7,22 @@
   text-transform: uppercase;
 }
 
+h1 {
+  @extend %header-font-setup;
+  font-size: 52px;
+}
+
+
+h2 {
+  @extend %header-font-setup;
+  font-size: 32px;
+}
+
+h3 {
+  @extend %header-font-setup;
+  font-size: 22px;
+}
+
 body {
   background: black;
   font-family: 'Space Mono';
@@ -22,27 +38,21 @@ body {
   justify-content: flex-end;
   margin-top: 5%;
   a {
-    text-decoration: none;
     font-size: 36px;
     color: #4DFDA8;
   }
 }
 
 .container {
-  // margin-left: 14%;
-  margin-top: 10%;
+  margin-top: 15%;
   display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // flex-basis: 30%;
   flex-direction: column;
 
   header {
     display: flex;
-    // align-items: center;
     flex-direction: row;
+    justify-content: space-between;
     h1 {
-      @extend %header-font-setup;
       margin-bottom: 0;
       font-size: 52px;
       color: #CFFD4D
@@ -56,6 +66,9 @@ body {
       text-transform: uppercase;
       align-content: flex-end;
     }
+    img {
+      height: 200px;
+    }
   }
 
   .rules {
@@ -63,14 +76,94 @@ body {
     display: flex;
     justify-content: center;
     color: #58D6B2;
-    // align-items: center;
     flex-direction: column;
     h2 {
-      @extend %header-font-setup;
       font-size: 32px;
+      margin-bottom: 0;
+      margin-top: 10%;
     }
     p {
-      font-size: 28px;
+      font-size: 22px;
     }
   }
+}
+
+#players {
+  margin-top: 8%;
+  display: flex;
+  justify-content: space-between;
+  h3 {
+    color: #82C3FF;
+  }
+  input {
+    font-family: 'Space Mono';
+    text-transform: uppercase;
+  }
+  select{
+    background: none;
+    font-size: 22px;
+    height: 50%;
+    width: 90%;
+  }
+  select:invalid { color: gray; }
+  #player1 {
+    table td{
+      border: 1px solid #7E51FF;
+    }
+    input {
+      color: #7E51FF;
+      font-size: 24px;
+    }
+  }
+  #player2 {
+
+    table td{
+      border: 1px solid #51ABFF;
+    }
+    input {
+      color: #51ABFF;
+      font-size: 24px;
+    }
+  }
+  div{
+    align-items: center;
+    p {
+      font-size: 100px;
+      color: lightpink;
+    }
+  }
+  table {
+    border: 2px solid #CFFD4D;
+    margin-top: 15%;
+    text-transform: uppercase;
+    text-align:center;
+    border-spacing: 20px;
+    overflow-x: auto;
+    td {
+      width: 316px;
+      height: 80px;
+      margin-bottom: 0px;
+    }
+    input {
+      background: no-repeat;
+      height: 50%;
+      width: 90%;
+      border: 0;
+      color: lightpink;
+    }
+  }
+}
+
+button {
+  margin: auto;
+  width: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #EDCFE5;
+  background-color: #7E51FF;
+  font-family: 'Space Mono';
+  height: 76px;
+  width: 316px;
 }

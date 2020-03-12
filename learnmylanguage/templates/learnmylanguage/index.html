@@ -10,7 +10,7 @@
 
 <body>
   <div class="menu">
-    <a href=#>FAQ</a>
+    <a href='/faq'>FAQ</a>
 
   </div>
   <div class="container">
@@ -27,6 +27,57 @@
       <h2>How to play?</h2>
       <p>Practice Duolingo every day. Every player needs to meet their daily goal set in Duolingo. If the player does not meet the goal the other player is notified..</p>
     </div>
+
+    <div id="players">
+      <div id="player1">
+        <h3>Player 1</h3>
+        <table>
+          <tr>
+            <td><input type="text" id="uname" name="uname" placeholder="Duolingo username">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <select required id="cars" name="cars">
+                <option value="" disabled selected hidden>Language</option>
+              </select>
+
+            </td>
+          </tr>
+          <tr>
+            <td><input type="email" id="email" name="email" placeholder="Email">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <p>+</p>
+      </div>
+
+      <div id="player2">
+        <h3>Player 2</h3>
+        <table id="player2">
+          <tr>
+            <td><input type="text" id="uname" name="uname" placeholder="Duolingo username">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <select required id="cars" name="cars">
+                <option value="" disabled selected hidden>Language</option>
+              </select>
+
+            </td>
+          </tr>
+          <tr>
+            <td><input type="email" id="email" name="email" placeholder="Email">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <button type="button">Enter the game</button>
   </div>
 
 </body>
