@@ -12,4 +12,4 @@ def game(request, game_id):
     return HttpResponse('Your gaming number is' + str(game_id))
 
 def faq(request):
-    return HttpResponse('Here is the FAQ baby')
+    return render(request, 'learnmylanguage/faq.html', {})

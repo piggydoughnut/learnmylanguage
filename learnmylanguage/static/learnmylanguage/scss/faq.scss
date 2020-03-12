@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+
+%header-font-setup {
+  font-family: 'Stencil Pixel-7';
+  font-weight: normal;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+
+body {
+  background: black;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: normal;
+  width: 70%;
+  margin: auto;
+}
+
+h1 {
+  @extend %header-font-setup;
+  font-size: 52px;
+}
+
+h2 {
+  @extend %header-font-setup;
+  font-size: 32px;
+}
+
+h3 {
+  @extend %header-font-setup;
+  font-size: 22px;
+}
+
+h1, h2 {
+  color: #4DFDA8;
+  text-transform: uppercase;
+}
+
+h3, p{
+  color: #89B0A5
+}
+
+a {
+  font-size: 36px;
+  color: #4DFDA8;
+  text-transform: uppercase;
+}
