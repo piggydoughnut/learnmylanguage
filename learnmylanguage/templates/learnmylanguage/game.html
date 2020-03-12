@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% load sass_tags %}
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="{% sass_src 'learnmylanguage/scss/game.scss' %}" />
+  <title>Game - Learn My Language, Babe</title>
+</head>
+
+<body>
+  <div class="menu">
+    <a href='/faq'>FAQ</a>
+
+  </div>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Learn My <br> Language, Babe</h1>
+        <p>keep your partner accountable of learning your language.</p>
+      </div>
+      <img src="/static/images/heart.png">
+    </header>
+
+    <div id="scoreboard">
+      <table>
+        <tr>
+          <th>Player name</th>
+          <th>Score</th>
+          <th>Strike</th>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+      </table>
+      <p id="footnote">made by daria with love, inspired by my partner who decided to learn my mother tongue</p>
+    </div>
+</body>
+
+</html>

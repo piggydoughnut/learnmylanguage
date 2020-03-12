@@ -9,7 +9,7 @@ def signup(request):
     return HttpResponse('You are signing up.')
 
 def game(request, game_id):
-    return HttpResponse('Your gaming number is' + str(game_id))
+    return render(request, 'learnmylanguage/game.html', {})
 
 def faq(request):
     return render(request, 'learnmylanguage/faq.html', {})
