@@ -6,8 +6,9 @@ from django.contrib.postgres.fields import ArrayField, JSONField
 class Player(models.Model):
     language = models.CharField(max_length=256)
     username = models.CharField(max_length=256)
+    email = models.CharField(default=None, max_length=256)
     goal = models.IntegerField(default=20)
-    strike = models.IntegerField(default=0)
+    streak = models.IntegerField(default=0)
     points = models.IntegerField(default=0)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
