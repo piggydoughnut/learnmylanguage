@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'learnmylanguage',
-    'sass_processor'
+    'sass_processor',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -135,5 +136,3 @@ STATICFILES_FINDERS = [
 ]
 
 SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR, 'learnmylanguage', 'static', 'learnmylanguage', 'css')
-
-print('*****' + BASE_DIR)
