@@ -7,8 +7,10 @@ from rest_framework.decorators import api_view
 
 from .models import Player, Game
 
+from .credentials import *
+
 import duolingo
-lingo  = duolingo.Duolingo('piggydoughnut', 'tmnzern789@')
+lingo  = duolingo.Duolingo(duolingo_uname, duolingo_pwd)
 
 def index(request):
     return render(request, 'learnmylanguage/index.html', {})
